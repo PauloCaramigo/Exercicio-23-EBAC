@@ -11,7 +11,7 @@ type Props = {
 export default function NovaTarefa({ task }: Props) {
     const { _id, tarefa, concluida } = task;
 
-    let [check, setCheck] = useState(concluida);
+    const [check, setCheck] = useState(concluida);
 
     const changCheck = () => {
         const novoCheck = !check
